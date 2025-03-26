@@ -8,6 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+            window.location.href = 'gracias.html';
+        }
+    </script>
 </head>
 <body>
     <a id="Home"></a>
@@ -16,8 +22,8 @@
             <h2 class="logo">Portfo<span>lio</span></h2>
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#Services">Services</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
@@ -35,6 +41,7 @@
             </div>
         </div>
     </div>
+    <a id="About"></a>
     <section class="about">
         <div class="main">
             <img src="main.png">
@@ -46,6 +53,7 @@
             </div>
         </div>
     </section>
+    <a id="Services"></a>
     <div class="services">
         <div class="title">
             <h2>Our Services</h2>
@@ -83,6 +91,69 @@
             </div>
         </div>
     </div>
+    <main class="skills">
+        <a id="skills"></a>
+        <h2>Mis skills</h2>
+        <div class="skills-content">
+            <div class="skills-txt">
+                <div class="skills-card">
+                    <img src="1.svg" alt="">
+                    <div class="card-txt">
+                        <h3><HTML></HTML></h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam porro, excepturi beatae sit possimus eius qui magnam ipsa. Eaque, laboriosam vel architecto unde aliquam molestias et exercitationem ut officiis rem.</p>
+                        <a href="#">Información</a>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <img src="2.svg" alt="">
+                    <div class="card-txt">
+                        <h3>CSS</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam porro, excepturi beatae sit possimus eius qui magnam ipsa. Eaque, laboriosam vel architecto unde aliquam molestias et exercitationem ut officiis rem.</p>
+                        <a href="#">Información</a>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <img src="3.svg" alt="">
+                    <div class="card-txt">
+                        <h3>JAVA SCRIPT</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam porro, excepturi beatae sit possimus eius qui magnam ipsa. Eaque, laboriosam vel architecto unde aliquam molestias et exercitationem ut officiis rem.</p>
+                        <a href="#">Información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="skills.png" alt="">
+            </div>
+        </div>
+    </main>
+    <a id="Contacto"></a>
+    <section class="contacto">
+        <div class="contacto-content container">
+            <div class="contact-form-container">
+                <h2>Contacto</h2>
+                <p>¿Tienes alguna pregunta o inquietud? Rellena el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+                <form class="contact-form" onsubmit="enviarFormulario(event)">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+    
+            <div class="contact-img-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2177.2253272379226!2d-0.39019748723910697!3d39.49052393642587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1742832152026!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
     <div class="contact-me">
         <p>Let Me Get You A Beautiful Website.</p>
         <a href="#" class="button-two">Hire Me</a>
